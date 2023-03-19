@@ -2,7 +2,7 @@
 
 @ Thanks to: Mikelan98, Nomura: ARM9 Expansion Subroutine (pokehacking.com/r/20041000)
 
-LoadCustomOverlay: @ hook at 0x0206D548
+LoadCustomOverlay: @ hook at 0x0206D554
   push {lr}
   push {r0-r7}
   sub sp, #0x3C
