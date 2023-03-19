@@ -1,0 +1,10 @@
+name: Skin Tan Never Changes
+author: TheGag96
+version: 1.0
+description: Makes it so your skin tan never gets lighter or darker - intended to be used in tandom with save editors to permanently change your skin color.
+rom_version: ADMP
+
+code:
+  - file: SetSkinTanNop.s
+    destination: arm9
+    offset: 0x98b1c
