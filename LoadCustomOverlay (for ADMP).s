@@ -16,9 +16,9 @@ LoadCustomOverlay: @ hook at 0x0206D944
   ldr r7, =0x0206463D
   blx r7
 
-  @ ReadFile(&fileInfo, (void*) 0x022C0000, fileInfo.fileEnd - fileInfo.fileStart);
+  @ ReadFile(&fileInfo, (void*) 0x022D1000, fileInfo.fileEnd - fileInfo.fileStart);
   mov r0, sp
-  ldr r1, =0x022D0000
+  ldr r1, =0x022D1000
   ldr r2, [sp, #0x28]
   ldr r3, [sp, #0x24]
   sub r2, r3
