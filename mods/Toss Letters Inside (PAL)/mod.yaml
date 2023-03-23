@@ -1,0 +1,13 @@
+name: Toss Letters Inside (PAL)
+author: TheGag96
+version: 1.0
+description: Tired of having to go outside just to throw away letters? Well, not anymore!
+rom_version: ADMP
+
+code:
+  - file: Nop.s
+    destination: overlay93
+    offset: 0xD78
+  - file: Nop.s
+    destination: overlay93
+    offset: 0xDD8
