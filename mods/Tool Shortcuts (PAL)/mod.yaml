@@ -1,0 +1,15 @@
+name: Tool Shortcuts (PAL)
+author: TheGag96
+version: 0.1
+description: Switch between tools without opening your inventory! Hold L and a press direction to cycle through your inventory. Hold L and press down to put away your tool.
+rom_version: ADMP
+free_ram: 0x10
+
+code:
+  - file: shortcut.d
+    destination: custom
+  - file: ToolShortcuts.s
+    destination: custom
+    hijacks:
+      - destination: arm9
+        offset: 0xffea
