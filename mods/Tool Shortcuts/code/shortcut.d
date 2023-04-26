@@ -70,7 +70,7 @@ enum Equipment : ubyte {
   golden_slingshot,
 
   // Held Items
-  dandelion_puffs_held,
+  dandelion_puffs,
   party_popper,
   sparkler,
   roman_candle,
@@ -230,7 +230,7 @@ extern(C) void shortcuts(MainData* mainData) {
       int idDist = (scrollDir == 1) ? item - oldEquip : oldEquip - item;
       if (idDist < 0) idDist += (ItemId.equipment_last - ItemId.equipment_first + 1);
 
-      if (item >= ItemId.tool_first && item <= ItemId.tool_last && idDist < bestChoiceIdDist) {
+      if (item >= ItemId.equipment_first && item <= ItemId.tool_last && idDist < bestChoiceIdDist) {
         foundItem        = true;
         bestChoice       = item;
         bestChoiceIdDist = idDist;
